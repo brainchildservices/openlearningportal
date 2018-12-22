@@ -171,95 +171,24 @@
     </section><!--//features-->
     
     <!-- ******DOCS****** --> 
-    <section id="docs" class="docs section">
-        <div class="container">
-            <div class="docs-inner">
-            <h2 class="title text-center">Get Started</h2>            
-            <div class="block">
-                <h3 class="sub-title text-center">Slow Performance</h3>
-                <p>Is your Windows or asp.net application is taking time to respond to user requests ? </p>
-                <p> In order to find the root cause of your application slowness,we have to capture the trace when the issue occurs</p>
-                <p>Below are the details of the usage of stacktracer commands</p>
-                
-                <div class="code-block">
-                    <!--//Use Prismjs - http://prismjs.com/index.html#basic-usage -->
-                    <pre><code class="language-css">
-StackTracer : ProcessName|PID [options]
-
-ProcessName|PID : /*You can give .NET process name or Process ID*/
-/D :/* Delay in seconds to before starting capture.This will give you time to reproduce the scenario which takes time(Default:0)*/
-/S :/* Samples to be captured- Indicates number of samples to be captured. (Default:10)*/
-/I : /*Interval between StackTrace samples in milliseconds (Default:1000)*/
-/? : /*To get this help menu*/
-
-/*When giving process name,don't specify the process extension exe.The output will be generated as XML file on the same folder where stacktracer is run from.*/
-
-stacktracer w3wp
-
-/*This command captures stacktraces of all CLR .net threads running in w3wp.exe process for 10 seconds.It will generate the output as an xml file in the same folder as stacktracer.exe.*/
-
-stacktracer /s 20 /i 500 iexplore
-
-/*Above command captures 20 samples where each sample is 500 milli seconds apart from iexplore.exe process.*/
-                     </code></pre>
-                </div><!--//code-block-->
-            </div><!--//block-->
-            
-            <div class="block">
-                <h3 class="sub-title text-center">Capture</h3>
-                <p>When you reproduce the issue,run a simple command to capture the data</p>
-                
-                <div class="code-block">
-                    <!--//Use Prismjs - http://prismjs.com/index.html#basic-usage -->
-                    <pre>
-    <code class="language-css">
-   
-        stacktracer w3wp
-
-/*This command captures stacktraces of all CLR .net threads running in w3wp.exe process for 10 seconds.
- *It will generate the output as an xml file in the same folder as stacktracer.exe.
-*/
-
-stacktracer /s 20 /i 500 iisexpress
-
-/*Above command captures 20 samples where each sample is 500 milli seconds apart from iisexpress.exe process.*/
-
-    </code></pre>
-                </div><!--//code-block-->
-            </div><!--//block-->
-            
-            <div class="block">
-                <h3 class="sub-title text-center">Analyze</h3>
-                <p>Once the trace is captured,you can easily analyze it by viewing the trace in any browser</p>
-                <p>More details of analyzing it can be found <a href="https://github.com/stack-tracer/stacktracer/wiki/analyzing-stacktracer-trace">here</a></p><!--//code-block-->
-            </div><!--//block-->   
-            <div class="block">
-                <h3 class="sub-title text-center">Full Documentation</h3>
-                <p>Please check the github wiki for more details</p>
-                <p class="text-center">
-                    <a class="btn btn-cta-primary" href="https://github.com/stack-tracer/stacktracer/wiki" target="_blank">More on GitHub</a>
-                </p>
-            </div><!--//block-->
-            
-            </div><!--//docs-inner-->         
-        </div><!--//container-->
-    </section><!--//features-->
     
     
     <!-- ******CONTACT****** --> 
     <section id="contact" class="contact section has-pattern">
         <div class="container">
             <div class="contact-inner">
-                <h2 class="title  text-center">Contact</h2>
-                <p class="intro  text-center">I hope you find this tool useful. <br />Feel free to get in touch if you have any questions or suggestions.</p>
+                <h2 class="title  text-center">Who We are</h2>
+                <p class="intro  text-center">
+                        We are Brainchild Didactics, We are a public benefit organization dedicated to helping and training people who are pursuing a career as a software engineer.
+                        We help anyone who are looking for a programming job. We teach them how to code and make them work on live and open source projects so they can focus on becoming a software engineer.                 </p>
                 
                 <div class="clearfix"></div>
                 <div class="info text-center">
                     <h4 class="sub-title">Get Connected</h4>
                     <ul class="social-icons list-inline">
                         <li><a href="https://twitter.com/deguggingio" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.facebook.com/debuggingio" target="_blank"><i class="fa fa-facebook"></i></a></li>                      
-                        <li><a href="https://debugging.io.com/contactus"><i class="fa fa-envelope"></i></a></li>                                     
+                        <li><a href="https://www.facebook.com/openlearningportal/" target="_blank"><i class="fa fa-facebook"></i></a></li>                      
+                        <li><a href="https://openlearningportal.org/contactus"><i class="fa fa-envelope"></i></a></li>                                     
                     </ul>
                 </div><!--//info-->
             </div><!--//contact-inner-->
@@ -269,7 +198,7 @@ stacktracer /s 20 /i 500 iisexpress
     <!-- ******FOOTER****** --> 
     <footer class="footer">
         <div class="container text-center">
-            <small class="copyright">Developed with <i class="fa fa-heart"></i> by <a href="http://debugging.io/rohithr" target="_blank">Rohith Rajan</a> for developers</small>
+            <small class="copyright">Developed with <i class="fa fa-heart"></i> by <a href="https://openlearningportal.org/contactus" target="_blank">Brainchild Didactics</a></small>
         </div><!--//container-->
     </footer><!--//footer-->
      
