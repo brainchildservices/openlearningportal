@@ -29,24 +29,16 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
-            <li class="dropdown nav-item">
-              <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                <i class="material-icons">book</i> About
-              </a>
-              <div class="dropdown-menu dropdown-with-icons">
-                <a href="#howtolearn" class="dropdown-item">
-                  <i class="material-icons">assessment</i> How it Works
-                </a>
-                <a href="https://github.com/brainchildservices/curriculum" class="dropdown-item" target="_blank">
-                  <i class="material-icons">assignment</i> Curriculum
-                </a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#howtolearn" >
+                <i class="material-icons">assessment</i> How it Works
+              </a>              
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#whyus" >
-                <i class="material-icons">group_work</i> Why Us
-              </a>
-            </li>
+                <a class="nav-link" href="https://github.com/brainchildservices/curriculum" target="_blank">
+                  <i class="material-icons">assignment</i> Curriculum
+                </a>
+            </li>       
             <li class="nav-item">
                 <a class="nav-link" href="#contactus">
                   <i class="material-icons">message</i> Contact Us
@@ -67,16 +59,40 @@
         </div>
       </div>
     </nav>
-    <div class="page-header header-filter" data-parallax="true" style="background-image: url('/images/study.jpg')">
+    <div class="page-header header-filter" style="background-image: url('/images/study.jpg');">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <h1 class="title">learn on the job with no up-front fees</h1>
-            <h4>Let work itself be the ambition!. Learning how to code will be your full time job </h4>
-            <br>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn btn-danger btn-raised btn-lg">
-              <i class="fa fa-play"></i> APPLY
-            </a>
+          <div class="col-md-8 ml-auto mr-auto text-center">
+            <h1 class="title"> learn on the job with no up-front fees!</h1>
+            <h4>Let work itself be the ambition!. Learning how to code will be your full time job</h4>
+          </div>
+          <div class="col-md-10 ml-auto mr-auto">
+            <div class="card card-raised card-form-horizontal">
+              <div class="card-body ">
+                <form method="" action="">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="form-group bmd-form-group">
+                        <input type="text" value="" placeholder="Company Name" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group bmd-form-group">
+                        <input type="email" value="" placeholder="Company Email" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group bmd-form-group">
+                        <input type="password" value="" placeholder="Company Password" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <button type="button" class="btn btn-primary btn-block">Sign up</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -126,38 +142,86 @@
           </div>
         </div>
         
-        <div id="contactus" class="section section-contacts">
-          <div class="row">
-            <div class="col-md-8 ml-auto mr-auto">
-              <h2 class="text-center title">Contact us</h2>
-              <h4 class="text-center description">Send us your enquiries and we will get back to you soon</h4>
-              <form class="contact-form">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label class="bmd-label-floating">Your Name</label>
-                      <input type="email" class="form-control">
+        <div id="contactus" class="contactus-1 section-image" style="background-image: url('/images/keyboard.jpg')">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <h2 class="title">Get in Touch</h2>
+                <h5 class="description">You need more information? Check what other persons are saying about our product. They are very happy with their purchase.</h5>
+                <div class="info info-horizontal">
+                  <div class="icon icon-primary">
+                    <i class="material-icons">pin_drop</i>
+                  </div>
+                  <div class="description">
+                    <h4 class="info-title">Find us at the office</h4>
+                    <p> Brainchild Services,
+                      <br> 698,St Jude Road
+                      <br> Thevera
+                      <br> Kochi
+                    </p>
+                  </div>
+                </div>
+                <div class="info info-horizontal">
+                  <div class="icon icon-primary">
+                    <i class="material-icons">phone</i>
+                  </div>
+                  <div class="description">
+                    <h4 class="info-title">Give us a ring</h4>
+                    <p> Rohith Rajan
+                      <br> +91 6282537900 
+                      <br> Mon - Sat, 8:00-22:00
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 ml-auto">
+                <div class="card card-contact">
+                  <form id="contact-form" method="post">
+                    <div class="card-header card-header-raised card-header-primary text-center">
+                      <h4 class="card-title">Contact Us</h4>
                     </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label class="bmd-label-floating">Your Email</label>
-                      <input type="email" class="form-control">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group label-floating is-empty bmd-form-group">
+                            <label class="bmd-label-floating">First name</label>
+                            <input type="text" name="name" class="form-control">
+                            <span class="material-input"></span>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group label-floating is-empty bmd-form-group">
+                            <label class="bmd-label-floating">Last name</label>
+                            <input type="text" name="name" class="form-control">
+                            <span class="material-input"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group label-floating is-empty bmd-form-group">
+                        <label class="bmd-label-floating">Email address</label>
+                        <input type="email" name="email" class="form-control">
+                        <span class="material-input"></span>
+                      </div>
+                      <div class="form-group label-floating is-empty bmd-form-group">
+                        <label for="exampleMessage1" class="bmd-label-floating">Your Message</label>
+                        <textarea name="message" class="form-control" id="exampleMessage1" rows="6"></textarea>
+                        <span class="material-input"></span>
+                      </div>
                     </div>
-                  </div>
+                    <div class="card-footer justify-content-between">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox" value="" data-com.agilebits.onepassword.user-edited="yes"> I'm not a robot
+                          <span class="form-check-sign">
+                            <span class="check"></span>
+                          </span>
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-primary pull-right">Send Message</button>
+                    </div>
+                  </form>
                 </div>
-                <div class="form-group">
-                  <label for="exampleMessage" class="bmd-label-floating">Your Message</label>
-                  <textarea type="email" class="form-control" rows="4" id="exampleMessage"></textarea>
-                </div>
-                <div class="row">
-                  <div class="col-md-4 ml-auto mr-auto text-center">
-                    <button class="btn btn-primary btn-raised">
-                      Send Message
-                    </button>
-                  </div>
-                </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -168,25 +232,10 @@
         <nav class="float-left">
           <ul>
             <li>
-              <a href="https://www.creative-tim.com">
-                Creative Tim
+              <a href="https://rohithkrajan.github.io/">
+                Brainchild Services
               </a>
-            </li>
-            <li>
-              <a href="https://creative-tim.com/presentation">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="http://blog.creative-tim.com">
-                Blog
-              </a>
-            </li>
-            <li>
-              <a href="https://www.creative-tim.com/license">
-                Licenses
-              </a>
-            </li>
+            </li>            
           </ul>
         </nav>
         <div class="copyright float-right">
@@ -194,7 +243,7 @@
           <script>
             document.write(new Date().getFullYear())
           </script>, made with <i class="material-icons">favorite</i> by
-          <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+          Brainchild Services for a better world.
         </div>
       </div>
     </footer>
