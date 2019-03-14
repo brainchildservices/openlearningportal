@@ -59,40 +59,16 @@
         </div>
       </div>
     </nav>
-    <div class="page-header header-filter" style="background-image: url('/images/study.jpg');">
+    <div class="page-header header-filter" data-parallax="true" style="background-image: url('/images/study.jpg')">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 ml-auto mr-auto text-center">
-            <h1 class="title"> learn on the job with no up-front fees!</h1>
-            <h4>Let work itself be the ambition!. Learning how to code will be your full time job</h4>
-          </div>
-          <div class="col-md-10 ml-auto mr-auto">
-            <div class="card card-raised card-form-horizontal">
-              <div class="card-body ">
-                <form method="" action="">
-                  <div class="row">
-                    <div class="col-md-3">
-                      <div class="form-group bmd-form-group">
-                        <input type="text" value="" placeholder="Company Name" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="form-group bmd-form-group">
-                        <input type="email" value="" placeholder="Company Email" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <div class="form-group bmd-form-group">
-                        <input type="password" value="" placeholder="Company Password" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <button type="button" class="btn btn-primary btn-block">Sign up</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
+          <div class="col-md-6">
+            <h1 class="title">learn on the job with no up-front fees</h1>
+            <h4>Let work itself be the ambition!. Learning how to code will be your full time job </h4>
+            <br>
+            <a class="btn btn-danger btn-raised btn-lg" data-toggle="modal" data-target="#signup">
+              <i class="fa fa-play"></i> APPLY
+            </a>
           </div>
         </div>
       </div>
@@ -227,6 +203,72 @@
         </div>
       </div>
     </div>
+   
+<div class="modal fade" id="signup" tabindex="-1" role="">
+    <div class="modal-dialog modal-login" role="document">
+        <div class="modal-content">
+            <div class="card card-signup card-plain">
+                <div class="modal-header">
+                  <div class="card-header card-header-primary text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                      <i class="material-icons">clear</i>
+                    </button>
+
+                    <h4 class="card-title">Log in</h4>
+                    <div class="social-line">
+                      <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
+                        <i class="fa fa-facebook-square"></i>
+                      </a>
+                      <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
+                        <i class="fa fa-twitter"></i>
+                      <div class="ripple-container"></div></a>
+                      <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
+                        <i class="fa fa-google-plus"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-body">
+                    <form class="form" method="" action="">
+                        <p class="description text-center">Or Be Classical</p>
+                        <div class="card-body">
+
+                            <div class="form-group bmd-form-group">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="material-icons">face</i></div>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="First Name...">
+                                </div>
+                            </div>
+
+                            <div class="form-group bmd-form-group">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="material-icons">email</i></div>
+                                  </div>
+                                  <input type="text" class="form-control" placeholder="Email...">
+                                </div>
+                            </div>
+
+                            <div class="form-group bmd-form-group">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="material-icons">lock_outline</i></div>
+                                  </div>
+                                  <input type="password" placeholder="Password..." class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <a href="#pablo" class="btn btn-primary btn-link btn-wd btn-lg">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <footer class="footer footer-default">
       <div class="container">
         <nav class="float-left">
